@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cash Register App | Kedar Kulkarni</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="heading">Cash Register App</h1>
+        <p id="description">Enter the valid Bill Amount and the Cash Given by the customer 
+          to know how much change you have to return.</p>
+       
+        <label for="bill-amount">Enter Bill Amount</label>
+        <input id="bill-amount" type="number"></input>
+        <p id= "error1"></p>
+        <button id="btn-next">Next</button>
+
+        <div id="section2">
+
+        <label for="amount-received">Enter Cash given</label>
+        <input id="amount-received" type="number"></input>
+        <button id="btn-calculate">Calculate</button>
+
+        <p id= "error2"></p>
+        <div id="output"></div>
+       </div>
+
+    </div>
+   
+  </body>
+  <script src="appl.js"></script>
+</html>
