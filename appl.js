@@ -13,7 +13,7 @@ buttonNext.addEventListener("click", clickHandler1);
 buttonCalculate.addEventListener("click", clickHandler2);
 
 function clickHandler1(){
-    if(billAmount.value<0){
+    if(billAmount.value<=0){
        
      showMessage1("The Bill amount should be greater than 0");
     }
@@ -27,7 +27,7 @@ function clickHandler2(){
    clearMessage(); 
     console.log(cashGiven.value);
     var returnCash = (cashGiven.value - billAmount.value);
-    if(billAmount.value<0){
+    if(billAmount.value<=0){
         
         showMessage1("The Bill amount should be greater than 0");
         section2.style.display = "none";
@@ -35,7 +35,7 @@ function clickHandler2(){
         buttonNext.style.display="block";
         
     }
-    if(returnCash<=0){ //edited: else if
+    if(returnCash<=0){ //edited: else if & returnCash should not be negative
         showMessage2("Enter the valid Cash Amount: Cash Amount should be greater than bill");
     }
     else{
